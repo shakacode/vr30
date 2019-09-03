@@ -1,0 +1,477 @@
+@import "../Button.resources";
+
+.expanded {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.expandedMobile {
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.expandedTablet {
+  @include tablet {
+    width: 100%;
+  }
+}
+
+$button-margin: 10px;
+$expanded-button-margin: $button-margin / 2;
+
+.margin--left {
+  margin-left: $button-margin;
+}
+
+.marginTablet--left {
+  @include tablet {
+    margin-left: $button-margin;
+  }
+}
+
+.marginMobile--left {
+  @include mobile {
+    margin-left: $button-margin;
+  }
+}
+
+.margin--left--expanded {
+  margin-left: $expanded-button-margin;
+}
+
+.marginTablet--left--expanded {
+  @include tablet {
+    margin-left: $expanded-button-margin;
+  }
+}
+
+.marginMobile--left--expanded {
+  @include mobile {
+    margin-left: $expanded-button-margin;
+  }
+}
+
+.margin--right {
+  margin-right: $button-margin;
+}
+
+.marginTablet--right {
+  @include tablet {
+    margin-right: $button-margin;
+  }
+}
+
+.marginMobile--right {
+  @include mobile {
+    margin-right: $button-margin;
+  }
+}
+
+.margin--right--expanded {
+  margin-right: $expanded-button-margin;
+}
+
+.marginTablet--right--expanded {
+  @include tablet {
+    margin-right: $expanded-button-margin;
+  }
+}
+
+.marginMobile--right--expanded {
+  @include mobile {
+    margin-right: $expanded-button-margin;
+  }
+}
+
+.margin--top {
+  margin-top: $button-margin;
+}
+
+.marginTablet--top {
+  @include tablet {
+    margin-top: $button-margin;
+  }
+}
+
+.marginMobile--top {
+  @include mobile {
+    margin-top: $button-margin;
+  }
+}
+
+.margin--top--expanded {
+  margin-top: $expanded-button-margin;
+}
+
+.marginTablet--top--expanded {
+  @include tablet {
+    margin-top: $expanded-button-margin;
+  }
+}
+
+.marginMobile--top--expanded {
+  @include mobile {
+    margin-top: $expanded-button-margin;
+  }
+}
+
+.margin--bottom {
+  margin-bottom: $button-margin;
+}
+
+.marginTablet--bottom {
+  @include tablet {
+    margin-bottom: $button-margin;
+  }
+}
+
+.marginMobile--bottom {
+  @include mobile {
+    margin-bottom: $button-margin;
+  }
+}
+
+.margin--bottom--expanded {
+  margin-bottom: $expanded-button-margin;
+}
+
+.marginTablet--bottom--expanded {
+  @include tablet {
+    margin-bottom: $expanded-button-margin;
+  }
+}
+
+.marginMobile--bottom--expanded {
+  @include mobile {
+    margin-bottom: $expanded-button-margin;
+  }
+}
+
+.margin--horizontal {
+  margin-right: $button-margin;
+  margin-left: $button-margin;
+}
+
+.marginTablet--horizontal {
+  @include tablet {
+    margin-right: $button-margin;
+    margin-left: $button-margin;
+  }
+}
+
+.marginMobile--horizontal {
+  @include mobile {
+    margin-right: $button-margin;
+    margin-left: $button-margin;
+  }
+}
+
+.margin--horizontal--expanded {
+  margin-right: $expanded-button-margin;
+  margin-left: $expanded-button-margin;
+}
+
+.marginTablet--horizontal--expanded {
+  @include tablet {
+    margin-right: $expanded-button-margin;
+    margin-left: $expanded-button-margin;
+  }
+}
+
+.marginMobile--horizontal--expanded {
+  @include mobile {
+    margin-right: $expanded-button-margin;
+    margin-left: $expanded-button-margin;
+  }
+}
+
+.margin--vertical {
+  margin-top: $button-margin;
+  margin-bottom: $button-margin;
+}
+
+.marginTablet--vertical {
+  @include tablet {
+    margin-top: $button-margin;
+    margin-bottom: $button-margin;
+  }
+}
+
+.marginMobile--vertical {
+  @include mobile {
+    margin-top: $button-margin;
+    margin-bottom: $button-margin;
+  }
+}
+
+.margin--vertical--expanded {
+  margin-top: $expanded-button-margin;
+  margin-bottom: $expanded-button-margin;
+}
+
+.marginTablet--vertical--expanded {
+  @include tablet {
+    margin-top: $expanded-button-margin;
+    margin-bottom: $expanded-button-margin;
+  }
+}
+
+.marginMobile--vertical--expanded {
+  @include mobile {
+    margin-top: $expanded-button-margin;
+    margin-bottom: $expanded-button-margin;
+  }
+}
+
+//colors
+.color--primary {
+  @include btn(
+    $color: #fff,
+    $border-color: $orange,
+    $background-color: $orange,
+    $hover-background-color: $orange-dark,
+    $hover-border-color: $orange-dark,
+    $disabled-background-color: $orange-disabled,
+    $initial-color: #ff005a,
+    $end-color: #ff7600,
+    $box-shadow: 0 4px 12px -3px rgba(#ff2f37, 0.35)
+  );
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &.ghost,
+  &.ghost[disabled] {
+    color: #fff;
+  }
+}
+
+.color--additional {
+  @include btn(
+    $color: $text-general,
+    $border-color: $gray-lighter,
+    $background-color: $gray-extra-light,
+    $hover-background-color: $gray-lighter,
+    $hover-color: $text-general,
+    $hover-border-color: $gray-extra-light,
+    $disabled-background-color: transparent,
+    $disabled-border-color: $gray-lighter
+  );
+
+  &.ghost {
+    &:hover {
+      g,
+      path,
+      polygon,
+      rect {
+        fill: $gray;
+      }
+    }
+  }
+}
+
+.color--faded {
+  @include btn(
+    $color: $text-disabled,
+    $background-color: transparent,
+    $hover-background-color: transparent,
+    $hover-color: $gray-light,
+    $border-color: $gray-lighter,
+    $hover-border-color: $gray-light,
+    $disabled-background-color: transparent,
+    $disabled-border-color: $gray-lighter
+  );
+
+  &.ghost {
+    &:hover {
+      g,
+      path,
+      polygon,
+      rect {
+        fill: $gray;
+      }
+    }
+  }
+}
+
+.color--white {
+  @include btn(
+    $color: $text-general,
+    $background-color: #fff,
+    $hover-background-color: $gray-extra-light,
+    $hover-color: $text-general,
+    $border-color: #fff,
+    $hover-border-color: #fff,
+    $box-shadow: 0 4px 12px -3px rgba(#2b4865, 0.1)
+  );
+}
+
+.color--danger {
+  @include btn(
+    $color: #fff,
+    $border-color: $red,
+    $background-color: $red,
+    $hover-background-color: $red-hover,
+    $hover-border-color: $red-hover,
+    $active-background-color: $red-active,
+    $active-border-color: $red-active
+  );
+
+  &.ghost {
+    &:hover {
+      g,
+      path,
+      polygon,
+      rect {
+        fill: $gray;
+      }
+    }
+  }
+}
+
+.color--facebook {
+  @include btn(
+    $color: #fff,
+    $border-color: $color-facebook,
+    $background-color: $color-facebook,
+    $hover-background-color: $color-hover-facebook,
+    $hover-color: #fff,
+    $hover-border-color: $color-hover-facebook,
+    $disabled-background-color: transparent,
+    $disabled-border-color: $color-hover-facebook
+  );
+}
+
+.color--google {
+  @include btn(
+    $color: $text-general,
+    $border-color: $gray-light,
+    $background-color: transparent,
+    $hover-background-color: $gray-extra-light,
+    $hover-color: $text-general,
+    $hover-border-color: $gray-light,
+    $disabled-background-color: transparent,
+    $disabled-border-color: $gray-dark
+  );
+}
+
+.color--general {
+  @include btn(
+    $color: #fff,
+    $border-color: $teal,
+    $background-color: $teal,
+    $hover-background-color: $teal-hover,
+    $hover-border-color: $teal-hover,
+    $active-background-color: $teal-active,
+    $active-border-color: $teal-active,
+    $disabled-background-color: $teal
+  );
+}
+
+.color--blue-dark {
+  @include btn(
+    $color: #fff,
+    $border-color: $blue-dark,
+    $background-color: $blue-dark,
+    $hover-background-color: $blue-dark-hover,
+    $hover-border-color: $blue-dark-hover,
+    $active-background-color: $blue-dark-active,
+    $active-border-color: $blue-dark-active,
+    $disabled-background-color: $blue-dark
+  );
+}
+
+.color--orange {
+  @include btn(
+    $color: #fff,
+    $border-color: $orange,
+    $background-color: $orange,
+    $hover-background-color: $orange-dark,
+    $hover-border-color: $orange-dark,
+    $disabled-background-color: $orange-disabled
+  );
+}
+
+.color--teal {
+  @include btn(
+    $color: $teal,
+    $border-color: $gray-lighter,
+    $background-color: #fff,
+    $hover-background-color: $gray-lighter,
+    $hover-color: $text-general,
+    $hover-border-color: $gray-extra-light,
+    $disabled-background-color: transparent,
+    $disabled-border-color: $gray-lighter
+  );
+}
+
+.ghost {
+  background-color: transparent;
+  color: $text-general;
+
+  &[disabled],
+  &:hover[disabled],
+  &:focus[disabled],
+  &.visuallyDisabled {
+    opacity: 0.65;
+    background-color: transparent !important;
+    cursor: not-allowed;
+    color: $text-general;
+  }
+
+  &:hover {
+    g,
+    path,
+    polygon,
+    rect {
+      fill: #fff;
+    }
+  }
+}
+
+// sizes
+.size--xs {
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 13px;
+}
+
+.size--sm {
+  border-radius: 4px;
+  padding: 6px 20px 7px;
+  font-size: 15px;
+}
+
+.size--md {
+  border-radius: 6px;
+  padding: 10px 30px 11px;
+  font-size: 15px;
+}
+
+.size--lg {
+  border-radius: 6px;
+  padding: 14px 40px 16px;
+  font-size: 20px;
+}
+
+.size--xl {
+  border-radius: 6px;
+  padding: 20px 40px 21px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+// Busy prop: <Spinner /> is inside
+.busy {
+  color: transparent !important;
+  pointer-events: none;
+}

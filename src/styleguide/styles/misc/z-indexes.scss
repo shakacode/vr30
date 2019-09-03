@@ -1,0 +1,90 @@
+// Take into account that Bootstrap@3's Tooltips and Popovers z-indexes
+// are between 1000 and 2000
+// E.g. Tooltip's z-index = 1070
+// https://github.com/twbs/bootstrap/blob/5359cb805/less/tooltip.less#L9
+// https://github.com/twbs/bootstrap/blob/98b9ff6b7ad3f/less/variables.less#L275
+
+// Global
+$z-index-confirm-modal: 10000;
+$z-index-modal: 1050; // this is actualy set via bootstrap
+$z-index-tooltip: 1100;
+$z-index-modal-close-icon: $z-index-modal + 1;
+$z-index-modal-spinner: $z-index-modal + 2;
+$z-index-google-pac-container: 20000;
+$z-index-file-uploader-overlay: 11000;
+$z-index-site-navbar: 999;
+$z-index-flash-area: 998;
+$z-index-not-found-page: 997;
+$z-index-data-table-action-bar: 1;
+$z-index-impersonate-footer: 50;
+
+// Listing Wizard
+$z-index-listing-wizard-confirm-reset: 100;
+$z-index-listing-wizard-creating-overlay: 50000;
+
+// Listings Index
+$z-index-search-control: 1;
+
+// Listing
+$z-index-listing-navbar: 90;
+$z-index-listing-loading-overlay: 91;
+
+// LEM/SLV widgets
+$z-index-listing-widget-fixed: 100; // MUST be greater than $z-index-listing-navbar
+$z-index-listing-show-listing-urls-icon: 10;
+// b/c we render modal dialogs as children of widget
+
+// Listing Calendar
+$z-index-listing-calendar-reservation-form-date-input: 7;
+$z-index-listing-calendar-reservation-form-submission-overlays: 8;
+
+// SLV
+$z-index-listing-url-field: 10;
+
+$z-index-listing-show-photo-gallery-overlay: 10000;
+$z-index-listing-show-photo-gallery-ui: 10100;
+$z-index-listing-show-photo-gallery-share-ui: 10200;
+$z-index-listing-show-photo-gallery-share-tooltip: 10250;
+$z-index-listing-show-book-button-fixed: 5;
+$z-index-listing-show-hero-gallery: 5;
+$z-index-listing-show-mobile-booking-footer: 100;
+
+// BLV
+$z-index-listings-index-results-prev-next: 20;
+$z-index-listings-index-price-overlay: 30;
+$z-index-listings-index-social-indicators: 30;
+$z-index-listings-index-dropdown-body: 102;
+$z-index-listings-index-results-overlay: 300;
+$z-index-listings-search-box: 1000;
+$z-index-listings-guests-dropdown: 1000;
+$z-index-listings-index-results-map: 1000;
+$z-index-pac-container: 2001;
+$z-index-dates-selection: 102; // MUST be grater than "favorites count" icons z-index = 101
+
+// GLM
+$z-index-glm-manage-menu: 100;
+
+/**
+ *  Listing Results Map
+ */
+// make the hover result marker be on top of any other marker
+$z-index-listing-result-map-marker-hover: 500;
+
+// make the listing result overlay be on top of everything on the map
+$z-index-listing-result-map-overlay: 1000;
+
+// Welcome Page
+$z-index-welcome-hero-image: 10;
+$z-index-welcome-search-form: 10;
+$z-index-welcome-day-picker: 1;
+$z-index-welcome-price-tag: 1;
+
+// Progressive Image
+$z-index-progressive-blured-image: 1;
+$z-index-progressive-normal-image: 3;
+
+// Top Tips
+$z-index-top-tips-hero: 10;
+
+// Listings Dropdown
+$z-index-listings-dropdown: 1000;

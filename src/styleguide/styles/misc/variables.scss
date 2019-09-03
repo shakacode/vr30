@@ -1,0 +1,80 @@
+/**
+ * @desc This module contains common SCSS variables.
+ *       If you need to re-use variable in JS component
+ *       duplicate it in `./variables.js` module and keep it in sync!
+ *
+ */
+
+$layout-footer-height-lg: 200px;
+$layout-navbar-text-to-icon-spacing: 8px;
+$layout-navbar-icon-size: 18px;
+
+// Transition defaults
+$transition-duration: 0.05s;
+$transition-timing-function: ease-in;
+
+// Others
+$overlay-darker: rgba(0, 0, 0, 0.5);
+$overlay-dark: rgba(0, 0, 0, 0.2);
+$color-facebook: #3a5998;
+$color-hover-facebook: #4468b2;
+$color-active-star: #ff8502;
+$state-color-deviation: 10%;
+
+// Breadcumbs
+$color-breadcrumbs: $gray;
+
+// UserAvatar
+$avatar-radius: 48px;
+$avatar-margin: 20px;
+$avatar-border-size: 1px;
+
+// Privacy mode indicators
+$private-mode-bg-color: rgba(63, 168, 138, 0.9);
+$private-mode-text-color: #fff;
+
+// Footer
+$color-footer-text: #a2afbe;
+$color-footer-link: #fff;
+$color-footer-link-hover: $color-footer-text;
+$color-footer-background: #272e36;
+
+// Relationship Type Colors
+// NB: Keep in sync with `./variables.js`
+$relationship-membership-color: $teal;
+$relationship-contact-color: #4d71b9;
+$relationship-fb-friend-color: $relationship-contact-color;
+$relationship-public-guest-color: #d65be8;
+$relationship-owner-color: $teal;
+
+// BLV
+$results-page-width: 60%;
+
+// Welcome Page
+$welcome-sm-tile-width: 320px;
+$welcome-md-tile-width: 340px;
+$welcome-lg-tile-width: 340px;
+
+// Calendar colors
+$calendar-bg: rgba(255, 255, 255, 0.9);
+$calendar-reserved-dates: $beige;
+
+// Text
+$text-general: $gray-dark;
+$text-additional: $gray;
+$text-disabled: $gray-light;
+
+// Links
+$link-general: $teal;
+$link-general-hover: $teal-hover;
+$link-general-disabled: lighten($link-general, 50%);
+
+$link-additional: #000;
+$link-additional-hover: lighten(#000, 15%);
+$link-additional-disabled: lighten(#000, 50%);
+
+// Inputs
+$input-padding: 10px;
+$input-icon-padding: 30px;
+$input-border-radius: 3px;
+$placeholder-color: $text-disabled;

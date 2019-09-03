@@ -1,0 +1,42 @@
+@import "../bootstrap/pre-customizations";
+* {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+}
+
+input,
+textarea,
+keygen,
+select,
+button {
+  font-size: $font-size-base;
+}
+
+label {
+  cursor: pointer;
+  font-weight: $font-weight-base !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+}
+
+select {
+  option[default][disabled] {
+    color: $text-disabled;
+  }
+
+  option {
+    color: #000;
+  }
+}
