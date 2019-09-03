@@ -1,16 +1,10 @@
-@import "../bootstrap/pre-customizations";
+@import "../misc/variables";
 * {
   box-sizing: border-box;
 
   &:focus {
     outline: none !important;
   }
-}
-
-body {
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  font-weight: $font-weight-base;
 }
 
 input,

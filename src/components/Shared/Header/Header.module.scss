@@ -1,0 +1,7 @@
+.container {
+  padding: 10px;
+
+  @include mobile {
+    max-width: 10px;
+  }
+}
