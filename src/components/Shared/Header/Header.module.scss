@@ -1,7 +1,33 @@
 .container {
-  padding: 10px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 160px;
+  margin-right: 160px;
 
   @include mobile {
     max-width: 10px;
   }
+}
+
+.labelContainer {
+  flex: 2;
+}
+
+.linksContainer {
+  flex: 1;
+  display: flex;
+}
+
+.link {
+  color: #243a53;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.linkWrapper {
+  flex: 1;
+  align-self: center;
 }
