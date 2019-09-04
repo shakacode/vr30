@@ -25,7 +25,14 @@ const HostStory = props => (
       </div>
       <div className={css.description}>
         <MDXRenderer>{props.story}</MDXRenderer>
-        <Button className={css.button} />
+        <Button
+          onClick={() =>
+            (window.location.href = "https://stermanrealty.com/about-us/")
+          }
+          className={css.button}
+        >
+          Learn more about Richard
+        </Button>
       </div>
     </div>
   </div>

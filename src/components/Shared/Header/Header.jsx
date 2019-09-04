@@ -16,7 +16,14 @@ const Header = () => (
           FAQ
         </a>
       </div>
-      <Button className={css.button} />
+      <Button
+        onClick={() =>
+          (window.location.href = "https://www.hawaiichee.com/hosts")
+        }
+        className={css.button}
+      >
+        List my Rentals
+      </Button>
     </div>
   </div>
 );

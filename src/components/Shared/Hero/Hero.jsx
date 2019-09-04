@@ -11,7 +11,13 @@ const Hero = ({ heading, subHeading }) => (
         dangerouslySetInnerHTML={{ __html: subHeading }}
       />
       <div className={css.buttonContainer}>
-        <Button>List my Rentals</Button>
+        <Button
+          onClick={() =>
+            (window.location.href = "https://www.hawaiichee.com/hosts")
+          }
+        >
+          List my Rentals
+        </Button>
       </div>
     </div>
   </div>
