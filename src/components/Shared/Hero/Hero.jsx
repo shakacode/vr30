@@ -1,6 +1,6 @@
 import React from "react";
 import css from "./Hero.module.scss";
-import Button from "../../Button/Button";
+import Button from "../Button/Button";
 
 const Hero = () => (
     <div className={css.container}>

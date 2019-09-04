@@ -14,7 +14,7 @@ const WelcomePage = props => (
   <div className={css.container}>
     <Header />
     <Hero />
-    <DetailsContainer />
+    <DetailsContainer tilesBody={props.data.detailTiles.body} />
     <FAQ faqBody={props.data.faq.body} />
     <HostStory />
     <NavigationFooter />
