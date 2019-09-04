@@ -2,14 +2,23 @@
   background-color: #00bdba;
   height: 500px;
   width: 100%;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding: 0 160px;
   display: flex;
+
+  @include mobile {
+    padding: 20px;
+    width: vw;
+    height: 450px;
+  }
 }
 
 .heroDescription {
   flex: 1;
   max-width: 650px;
+
+  @include mobile {
+    max-width: vw;
+  }
 }
 
 .mainHeading {
@@ -18,6 +27,12 @@
   font-weight: bold;
   line-height: 56px;
   margin-top: 60px;
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
 }
 
 .subHeading {
@@ -27,8 +42,19 @@
   line-height: 40px;
   margin-top: 24px;
   margin-bottom: 24px;
+
+  @include mobile {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
 }
 
-.blankSpace {
-  flex: 1;
+.buttonContainer {
+  display: flex;
+
+  @include mobile {
+    align-items: center;
+    justify-content: center;
+  }
 }
