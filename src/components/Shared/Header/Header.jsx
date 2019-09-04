@@ -16,9 +16,7 @@ const Header = () => (
           FAQ
         </a>
       </div>
-      <Button
-        className={css.button}
-      />
+      <Button className={css.button} />
     </div>
   </div>
 );

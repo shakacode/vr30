@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `VR30`,
-    author: `Shakacode`
+    author: `Shakacode`,
+    description: "VR30 Site",
+    siteUrl: `https://hawaiichee.com`,
+    social: {
+      twitter: `shakacode`
+    }
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -56,12 +61,11 @@ module.exports = {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       }
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `VR30`,
+        short_name: `VR30`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
