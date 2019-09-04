@@ -7,13 +7,15 @@ import {
   Footer,
   HostStory
 } from "../Shared";
+import FAQ from "./FAQ/FAQ";
 import css from "./Welcome.module.scss";
+
 const WelcomePage = props => (
   <div className={css.container}>
-    {console.log("props", props)}
     <Header />
     <Hero />
     <DetailsContainer />
+    <FAQ faqBody={props.data.faq.body} />
     <HostStory />
     <NavigationFooter />
     <Footer />

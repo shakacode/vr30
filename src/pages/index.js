@@ -14,6 +14,9 @@ export const pageQuery = graphql`
     story: mdx(frontmatter: { slug: { eq: "landing-page-story" } }) {
       body
     }
+    faq: mdx(frontmatter: { slug: { eq: "landing-page-faq" } }) {
+      body
+    }
     banner:  mdx(frontmatter: { slug: { eq: "landing-page-list-rental-banner" } }) {
       frontmatter {
         heading

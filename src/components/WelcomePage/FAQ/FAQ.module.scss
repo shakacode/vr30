@@ -1,0 +1,85 @@
+.container {
+  width: 944px;
+  margin: 120px auto 0;
+
+  details {
+    margin-top: 24px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 36px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #243a53;
+
+    p,
+    ul,
+    ol {
+      margin-bottom: 0;
+
+      a {
+        color: $teal;
+      }
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      counter-reset: li;
+      margin-top: 10px;
+      margin-left: 20px;
+
+      li::before {
+        content: counter(li);
+        color: #7c94af;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        counter-increment: li;
+      }
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    summary {
+      line-height: 32px;
+      font-weight: 600;
+      font-size: 24px;
+
+      @include mobile {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+      }
+    }
+
+    &[open] summary {
+      margin-bottom: 24px;
+    }
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.heading {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+  color: #243a53;
+
+  @include mobile {
+    line-height: 32px;
+    font-size: 28px;
+  }
+}
