@@ -1,9 +1,15 @@
 .container {
-  margin-left: 160px;
-  margin-right: 160px;
+  max-width: 1120px;
+  margin: 0 auto;
+  min-height: 100px;
+  padding: 0 10px;
   display: flex;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .tag {
@@ -13,6 +19,14 @@
   line-height: 24px;
   text-align: left;
   flex: 1;
+  margin-bottom: 0;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 20px;
+    margin-top: 15px;
+  }
 }
 
 .messageLink {
@@ -21,9 +35,10 @@
   font-weight: 500;
   line-height: 24px;
   text-align: right;
-}
 
-.linkWrapper {
-  flex: 1;
-  text-align: right;
+  @include mobile {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
 }
