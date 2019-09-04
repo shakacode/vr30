@@ -16,7 +16,7 @@ const Header = () => (
           FAQ
         </a>
       </div>
-      <Button className={css.linkWrapper} />
+      <Button className={css.button} />
     </div>
   </div>
 );

@@ -1,7 +1,10 @@
 import React from "react";
 import button from "react";
-import style from "./Button.module.scss";
+import css from "./Button.module.scss";
+import cn from "classnames";
 
-const Button = () => <button className={style.button}>List my Rentals</button>;
+const Button = props => (
+  <button className={cn(css.button, props.className)}>List my Rentals</button>
+);
 
 export default Button;

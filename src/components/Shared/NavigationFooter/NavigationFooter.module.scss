@@ -1,0 +1,20 @@
+.container {
+  height: 256px;
+  width: 100%;
+  background-color: #03cccb;
+  padding-top: 64px;
+}
+
+.message {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
