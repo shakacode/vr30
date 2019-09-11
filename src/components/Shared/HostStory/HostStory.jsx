@@ -9,14 +9,14 @@ const HostStory = props => (
     <div className={css.innerContainer}>
       <div className={css.imagesContainer}>
         <img
-          src="https://www.w3schools.com/html/pic_trulli.jpg"
+          src="../../../styles/images/Richard.png"
           alt="Trulli"
           width="500"
           height="383"
           className={css.primaryImage}
         />
         <img
-          src="https://images.pexels.com/photos/2147486/pexels-photo-2147486.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          src="../../../styles/images/Richard2.png"
           alt="Trulli"
           width="220"
           height="220"
