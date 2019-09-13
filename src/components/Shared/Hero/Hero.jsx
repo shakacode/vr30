@@ -2,6 +2,7 @@ import React from "react";
 import css from "./Hero.module.scss";
 import Button from "../Button/Button";
 
+
 const Hero = ({ heading, subHeading }) => (
   <div className={css.container}>
     <div className={css.heroDescription}>
