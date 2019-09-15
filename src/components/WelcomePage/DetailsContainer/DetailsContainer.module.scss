@@ -46,9 +46,5 @@
 }
 
 div:empty {
-  visibility: hidden;
-
-  @include mobile{
-    display: none;
-  }
+  display: none;
 }
