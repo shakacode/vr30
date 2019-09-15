@@ -6,7 +6,7 @@ import RichardImage2 from "../../../styles/images/Richard2.png";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const HostStory = props => (
-  <div className={css.container}>
+  <div className={css.container} id="story">
     <div className={css.title}>Richard's Story</div>
     <div className={css.innerContainer}>
       <div className={css.imagesContainer}>

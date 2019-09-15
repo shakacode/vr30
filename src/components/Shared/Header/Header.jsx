@@ -16,12 +16,12 @@ const Header = () => (
     </div>
     <div className={css.linksContainer}>
       <div className={css.linkWrapper}>
-        <a href={"https://www.hawaiichee.com/about"} className={css.link}>
+        <a href="#story" className={css.link}>
           About
         </a>
       </div>
       <div className={css.linkWrapper}>
-        <a href={"https://www.hawaiichee.com/faq"} className={css.link}>
+        <a href="#faq" className={css.link}>
           FAQ
         </a>
       </div>

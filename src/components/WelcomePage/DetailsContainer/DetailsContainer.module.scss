@@ -26,7 +26,9 @@
 
     p {
       margin-bottom: 0;
+      font-family:'Montserrat',sans-serif;
     }
+
 
     @include mobile {
       padding: 20px;
@@ -41,4 +43,12 @@
 
 .lastTile {
   margin-right: 0;
+}
+
+div:empty {
+  visibility: hidden;
+
+  @include mobile{
+    display: none;
+  }
 }
