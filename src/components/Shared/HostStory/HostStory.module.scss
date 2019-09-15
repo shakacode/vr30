@@ -77,7 +77,6 @@
 
 .link {
   color: #03cccb;
-  text-decoration: none;
 }
 
 .primaryImage {
@@ -89,4 +88,12 @@
   top: -120px;
   margin-bottom: 0;
   left: 250px;
+}
+
+a{
+  box-shadow: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
 }

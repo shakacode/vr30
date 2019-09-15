@@ -32,7 +32,12 @@
   font-weight: 600;
   line-height: 24px;
   text-align: center;
-  text-decoration: none !important;
+  box-shadow: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
+
 }
 
 .linkWrapper {
